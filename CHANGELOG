@@ -30,6 +30,11 @@
 * Pending changes since 21.2.1
 ** Enhancements
 - Add hook functions for cl:ed via ext:*ed-functions* list
+** API changes
+- Linker flags like ~-lfoo~ specifiying additional library to link in
+  should now be added to ~c:*user-ld-libs*~. Previously, these were
+  contained in ~c:*user-ld-flags*~, which could lead to option flags such
+  as ~-Wl,foo~ to be added in a wrong place in the C compiler command line.
 * 21.2.1 changes since 20.4.24
 ** Announcement
 Dear Community,
