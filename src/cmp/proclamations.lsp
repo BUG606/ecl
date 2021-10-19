@@ -1515,6 +1515,7 @@
 #+threads (proclamation mp:semaphore-wait-count (mp:semaphore) natural :reader)
 #+threads (proclamation mp:wait-on-semaphore (mp:semaphore) fixnum)
 #+threads (proclamation mp:try-get-semaphore (mp:semaphore) t)
+#+threads (proclamation mp:semaphore-wait (mp:semaphore real fixnum) t)
 #+threads (proclamation mp:signal-semaphore (mp:semaphore &optional fixnum) t)
 
 ;;;
